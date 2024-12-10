@@ -1,0 +1,960 @@
+/*
+    Layout Made by Chris (#105465) for free use
+    */
+
+/* font import */
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+/*variables*/
+:root {
+    --fc1: #000000;
+    --fc2: #1e1a15;
+    --fc3: #3d3529;
+    --eventText: #364d00;
+    --mainFont: 'Nunito Sans', Verdana, 'Geneva', Tahoma, sans-serif;
+    --headFont: 'Nunito Sans', Verdana, 'Geneva', Tahoma, sans-serif;
+    --bgColor: #e0dad1b3;
+    --pc1: #ac9c86;
+    --pc2: #b7a995;
+    --pc3: #c1b5a4;
+    --pc4: #cbc1b3;
+    --sc1: #ac9c86;
+    --sc2: #b7a995;
+    --sc3: #c1b5a4;
+    --sc4: #cbc1b3;
+    --tc: #b49d7e;
+    --borderColor: #ffffff;
+    --redAlert: #c99c9c;
+    --redLink: #211212;
+    --greenAlert: #b3c99c;
+    --greenLink: #1a2112;
+    --yellowAlert: #c9c99c;
+    --yellowLink: #212112;
+    --button1: #201a13;
+    --button2: #30271d;
+    --button3: #403426;
+    --button4: #504130;
+    --button5: #604e39;
+    --button6: #705b43;
+    --buttonText: #ffffff;
+    --redButton1: #221111;
+    --redButton2: #331a1a;
+    --redButton3: #442222;
+    --redButton4: #552b2b;
+    --redButton5: #663333;
+    --redButton6: #773c3c;
+    --redButtonText: #ffffff;
+}
+
+/* Body */
+body {
+    font-family: var(--mainFont);
+    background: #e0dad1 url('https://upload.wikimedia.org/wikipedia/commons/b/b1/Kopje_%2831224859751%29.jpg') fixed;
+    background-position-y: center;
+    background-position-x: center;
+    /* DON'T CHANGE BELOW */
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--fc1);
+}
+
+/* Headers */
+h1, h2, h3, .sidebar h3 {
+    color: var(--fc1);
+    font-family: var(--headFont);
+}
+
+/* Other Text */
+p, b, #fraProfileContent {
+    color: var(--fc1);
+}
+
+small {
+    color: var(--fc1) !important;
+}
+
+/* Links */
+a:link, a:visited, a:active {
+    color: var(--fc2);
+}
+
+a:hover, a:focus {
+    color: var(--fc1);
+}
+
+/* Topbar */
+.topbar a:link, .topbar a:visited, .topbar a:active {
+    color: var(--fc2);
+}
+
+.topbar a:hover, .topbar a:focus {
+    color: var(--fc1);
+}
+
+.topbar {
+    background: var(--pc1);
+    border: 1px solid var(--borderColor);
+    border-top: none;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: var(--fc1);
+}
+
+/* Navbar */
+.navbar {
+    background: var(--pc2);
+    border-bottom: 1px solid var(--borderColor);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-family: var(--headFont);
+}
+
+/* logo */
+.navbar-brand img {
+    content: url('https://www.lioden.com/images/items/Amusement/cheetahskull.png');
+    filter: none;
+}
+
+/* navbar defaults */
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    color: var(--fc2);
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: var(--fc2);
+    font-weight: bold;
+}
+
+/* mobile toggle box */
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+/* make different from navbar */
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background: var(--pc3);
+}
+
+/* bars in navbar icon */
+.navbar-default .navbar-toggle .icon-bar {
+    background: var(--fc1);
+}
+
+/* collapsed navbar */
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: var(--pc1);
+    box-shadow: none;
+}
+
+/* active and hovered links in navbar */
+.navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav li a:hover, .navbar-default .navbar-nav li a:focus, .navbar .active a:link, .navbar .active a:visited, .navbar .active a:active, .navbar .active a:focus {
+    background: var(--pc3);
+    color: var(--fc1);
+}
+
+/* main */
+.main {
+    background: var(--bgColor);
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+    box-shadow: none;
+}
+
+/* territory box */
+.col-md-9 {
+    background: none;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    background: var(--pc3);
+    border: 1px solid var(--borderColor);
+    border-radius: 10px;
+}
+
+.breadcrumb::after {
+    content: "CSS by Chris (#105465)";
+    position: absolute;
+    right: 20%;
+    z-index: 100;
+    color: var(--fc1);
+}
+
+.breadcrumb-item.active, .breadcrumb-item::before {
+    color: var(--fc3) !important;
+}
+
+/* Side Bar */
+/* side panel bg */
+.sidebar.col-md-3 {
+    background: none;
+}
+
+/* sidebar inner boxes */
+.col-md-3 .panel {
+    border: 1px solid var(--borderColor);
+    border-radius: 10px;
+    background: var(--pc3);
+    box-shadow: none;
+    color: var(--fc1);
+}
+
+/* dotted line above chat on smaller screen sizes */
+.clear {
+    border-color: var(--fc1) !important;
+}
+
+/* Progress Bars */
+/* background container */
+.progress {
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid var(--borderColor)
+}
+
+/* default and impression */
+.progress-bar {
+    background: var(--tc);
+}
+
+/* if you want all to match comment out the next three classes */
+/* exp, hunger, energy, and thirst respectively */
+/* .progress-bar-success {
+    background: #ffc680;
+    }
+    .progress-bar-danger {
+    background: #ffba66;
+    }
+    .progress-bar-warning {
+    background: #ffaf4d;
+    }
+    .progress-bar-info {
+    background: #ffaf4d;
+    } */
+/* text inside the progress bars */
+.progress div {
+    color: #000;
+    font-family: var(--mainFont);
+}
+
+/* alerts */
+/* all */
+.alert-danger, .alert-success, .alert-warning, .alert {
+    color: var(--fc1);
+    background: var(--greenAlert);
+    border: 1px solid var(--borderColor);
+    border-radius: 10px;
+}
+
+/* red notifications */
+.alert-danger {
+    color: var(--fc1);
+    background: var(--redAlert);
+}
+
+.alert-danger>a, .alert-danger>a:link, .alert-danger>a:active, .alert-danger>a:visited {
+    color: var(--redLink);
+}
+
+.alert-danger>a:hover, .alert-danger>a:focus, .alert-danger b {
+    color: var(--fc1);
+}
+
+/* green notifications */
+.alert-success {
+    color: var(--fc1);
+    background: var(--greenAlert);
+}
+
+.alert-success>a, .alert-success>a:link, .alert-success>a:active, .alert-success>a:visited {
+    color: var(--greenLink);
+}
+
+.alert-success>a:hover, .alert-success>a:focus, .alert-success b {
+    color: var(--fc1);
+}
+
+/* yellow notifications */
+.alert-warning {
+    color: var(--fc1);
+    background: var(--yellowAlert);
+}
+
+.alert-warning>a, .alert-warning>a:link, .alert-warning>a:active, .alert-warning>a:visited {
+    color: var(--yellowLink);
+}
+
+.alert-warning>a:hover, .alert-warning>a:focus, .alert-warning b {
+    color: var(--fc1);
+}
+
+/* HTML Boxes if applicable */
+
+
+/* comment box */
+#commentBox {
+    border: 1px solid var(--borderColor) !important;
+    border-radius: 5px !important;
+    height: 200px !important;
+    background: var(--pc4);
+}
+
+.comment:nth-child(even) {
+    background: var(--pc3) !important;
+}
+
+/* scrollbar */
+#commentBox::-webkit-scrollbar {
+    height: 0;
+    width: 8px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: #fff;
+}
+
+/* scrollbar button */
+#commentBox::-webkit-scrollbar-thumb {
+    background: var(--pc2);
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#commentBox::-webkit-scrollbar-thumb:hover {
+    background: var(--pc1);
+}
+
+/* tables */
+/* table headers */
+.table .top, .table th {
+    background: var(--sc1);
+    color: var(--fc1);
+    font-family: var(--headFont);
+    font-weight: bold;
+}
+
+/* lion title and name */
+.xlarge.b {
+    font-weight: bold;
+}
+
+/* lion image */
+#lion_image>div {
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+}
+
+/* table body */
+.table {
+    background: var(--sc4);
+    border: 1px solid var(--borderColor);
+    color: var(--fc1);
+}
+
+/* table links */
+.table .top a:link, .table .top a:active, .table .top a:visited, .table th a:link, .table th a:active, .table th a:visited {
+    color: var(--fc2);
+    font-weight: bold;
+    border-bottom: none;
+}
+
+.table .top a:hover, .table th a:hover, .table .top a:focus, .table th a:focus {
+    color: var(--fc1);
+    font-weight: bold;
+}
+
+/* left side of stats on king and status bars in caves */
+.table .left {
+    background: var(--sc2);
+}
+
+/* left side of stats on king */
+.inner-table .left {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+/* right side of king stats */
+.inner-table .right {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background: var(--sc3);
+}
+
+/* every other lion in caves */
+.table .right_odd {
+    background: var(--sc3);
+}
+
+/* table footers */
+.table .innerHeader, .table .bottom, #player>tbody>tr {
+    background: var(--sc1);
+    color: var(--fc1);
+}
+
+/* player table footer adjustments for rounded corners */
+#player .right_odd {
+    background: none;
+}
+
+#player tr.right {
+    background: none;
+}
+
+/* quick link to mutated lions under king panel */
+.table .bottom a:link, .table .bottom a:visited, .table .bottom a:active {
+    color: var(--fc2);
+    text-decoration: none;
+}
+
+.table .bottom a:hover, .table .bottom a:focus {
+    color: var(--fc1);
+    text-decoration: underline;
+}
+
+/* hr in player table */
+#player hr {
+    border-color: transparent;
+    margin: 0;
+    margin-top: 1em;
+}
+
+/* little :|: spans in player table */
+#player .text-muted {
+    color: #00000080;
+}
+
+/* days left until heat badge */
+.badge {
+    background: var(--tc);
+    color: var(--fc1);
+    border: 1px solid var(--borderColor);
+}
+
+/* inputs for typing in text in territory description etc. */
+textarea, input, select, #fra_chatContainer #txtChatInput {
+    color: #000000;
+    background: #ffffff;
+    border: 1px solid var(--sc1);
+}
+
+input::placeholder {
+    color: #00000080;
+}
+
+/* CLAN STUFF */
+.page-description {
+    border: 1px solid var(--borderColor);
+    background: var(--pc4);
+    padding: 20px;
+}
+
+.page-description>div {
+    padding: 0;
+    margin: 0;
+}
+
+/* Caves and Mounds Main */
+/* main overrides */
+.mound-grid, .cave-grid {
+    background: var(--tc);
+    border: 1px solid var(--borderColor);
+    border-radius: 10px;
+    color: var(--fc2);
+}
+
+/* cave and mound link hover */
+.center>a:hover>.cave-grid, .center>a:focus>.cave-grid, .center>a:hover>.mound-grid, .center>a:focus>.mound-grid {
+    color: var(--fc1);
+}
+
+/* cave and mound customization */
+/* all caves */
+.cave-grid>img {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/GrassyDen.png');
+    height: 120px;
+    object-fit: cover;
+    object-position: top;
+}
+
+/* pride tabs */
+img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'], img[src$='//static.lioden.com/images/layout/nestingbanner.png'], img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/kopje.png');
+    height: 100px;
+    object-fit: cover;
+    object-position: center 10%;
+}
+
+/* unsorted lions */
+/* img[src$='//static.lioden.com/images/layout/unsortedlionsbanner.png'] {
+    content: url('LINK');
+    object-position: top;
+    } */
+/* pregnant lionesses */
+/* img[src$='//static.lioden.com/images/layout/nestingbanner.png'] {
+    content: url('LINK');
+    object-position: top;
+    } */
+/* pride overview */
+/* img[src$='//static.lioden.com/images/layout/prideoverviewbanner.png'] {
+    content: url('LINK');
+    object-position: top;
+    } */
+/* all mounds */
+/* .mound-grid img {
+    content: url('LINK');
+    padding: 5px;
+    } */
+/* all mounds but like a cave */
+.mound-grid {
+    padding: 0 0 5px 0;
+}
+
+.mound-grid img {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/termitelands.png');
+    height: 100px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* create mound image and empty cave slots */
+img[src$='//static.lioden.com/images/layout/addbeetlemound.png'], img[src$='//static.lioden.com/images/layout/caveunused.jpg'] {
+    filter: saturate(50%);
+}
+
+/* featured lion section */
+.featured-lion {
+    background: var(--sc1);
+    color: var(--fc1);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 0 1px var(--borderColor);
+
+}
+
+.featured-lion img {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+/* featured lion background image */
+.featured-lion img[src$='//static.lioden.com/images/cave/default.png'] {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/kopje.png') !important;
+    /* filter: none; */
+}
+
+/* very important if you want it to not look ugly anymore lol don't change the padding here or the media queries at the bottom */
+.featured-lion .b {
+    padding-top: 8px;
+}
+
+.featured-lion a:hover, .featured-lion a:focus {
+    color: var(--fc1);
+}
+
+.featured-lion a:link, .featured-lion a:active, .featured-lion a:visited {
+    color: var(--fc2);
+}
+
+/* owned by text */
+h1.center>small, h1.center>small a:hover, h1.center>small a:focus {
+    color: var(--fc1) !important;
+}
+
+h1.center>small a, h1.center>small a:link, h1.center>small a:visited, h1.center>small a:active {
+    color: var(--fc2) !important;
+}
+
+/* dropdown text */
+.table .bottom select {
+    color: #000;
+}
+
+/* Inner Mounds */
+/* menu bg */
+.sub_menu {
+    background: var(--sc1);
+    border: 1px solid var(--borderColor);
+    border-radius: 10px;
+}
+
+.sub_sub_menu {
+    display: none;
+}
+
+/* Feature Styling (like feed all play all etc.) */
+div.feature {
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+    background: var(--sc4);
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* dropdown width (acts funny on smaller screens at the default 200px sometimes) */
+div.feature select {
+    width: 180px !important;
+}
+
+/* header */
+div.feature h3 {
+    color: var(--fc1);
+}
+
+.feature-footer {
+    background: var(--sc4);
+}
+
+/* inner text */
+.feature .xsmall {
+    color: var(--fc1);
+}
+
+/* Dynasty Pills */
+/* dynasty main */
+div.left {
+    background: var(--tc);
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+    color: var(--fc1);
+}
+
+/* custom dynasty images */
+div.left img {
+    content: url('https://static.lioden.com/images/dynamic/backgrounds/VictoryRoad.png');
+    object-fit: cover;
+    object-position: center 60%;
+    padding: 0;
+    height: 60px;
+    max-width: 500px !important;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.dynastylist .left {
+    padding: 5px 0 0 0;
+}
+
+/* dynasty headers */
+.dynastylist h3 {
+    color: var(--fc2);
+    padding-top: 5px;
+}
+
+.dynastylist h3:hover, .dynastylist h3:focus {
+    color: var(--fc1);
+}
+
+/* links in the pills beneath dynasty stuff */
+a div.left {
+    color: var(--fc2);
+}
+
+a div.left:hover, a div.left:focus {
+    color: var(--fc1);
+}
+
+/* Branch */
+.item {
+    background: var(--sc3);
+    border: 1px solid var(--borderColor);
+    border-radius: 5px;
+}
+
+.item-header {
+    background: var(--sc2);
+    color: var(--fc1);
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.item-footer {
+    background: var(--sc2);
+    color: var(--fc1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/* Buttons */
+/* all */
+.select-control, button.button, input[type="button"], input[type="submit"], input[type="reset"], .select-control:hover, button.button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover, .select-control.bad, button.button.bad, input[type="button"].bad, input[type="submit"].bad, input[type="reset"].bad, .select-control.bad:hover, button.button.bad:hover, input[type="button"].bad:hover, input[type="submit"].bad:hover, input[type="reset"].bad:hover {
+    border-radius: 5px;
+}
+
+/* regular button */
+.select-control, button.button, input[type="button"], input[type="submit"], input[type="reset"] {
+    background: var(--button6);
+    background: linear-gradient(to bottom, var(--button6) 5%, var(--button4) 5%, var(--button4) 95%, var(--button2) 95%);
+    color: var(--buttonText);
+    border: 1px solid var(--button2);
+    text-shadow: 1px 1px 0px var(--button2);
+    font-family: var(--mainFont);
+}
+
+/* regular button hover */
+.select-control:hover, button.button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="reset"]:hover {
+    background: var(--button5);
+    background: linear-gradient(to bottom, var(--button5) 5%, var(--button3) 5%, var(--button3) 95%, var(--button1) 95%);
+    color: var(--buttonText);
+    border: 1px solid var(--button1);
+    text-shadow: 1px 1px 0px var(--button1);
+}
+
+/* red button */
+.select-control.bad, button.button.bad, input[type="button"].bad, input[type="submit"].bad, input[type="reset"].bad {
+    background: var(--redButton6);
+    background: linear-gradient(to bottom, var(--redButton6) 5%, var(--redButton4) 5%, var(--redButton4) 49%, var(--redButton4) 95%, var(--redButton2) 95%);
+    color: var(--redButtonText);
+    border: 1px solid var(--redButton2);
+    text-shadow: 1px 1px 0px var(--redButton2);
+}
+
+/* red button hover */
+.select-control.bad:hover, button.button.bad:hover, input[type="button"].bad:hover, input[type="submit"].bad:hover, input[type="reset"].bad:hover {
+    background: var(--redButton5);
+    background: linear-gradient(to bottom, var(--redButton5) 5%, var(--redButton3) 5%, var(--redButton3) 49%, var(--redButton3) 95%, var(--redButton1) 95%);
+    color: var(--redButtonText);
+    border: 1px solid var(--redButton1);
+    text-shadow: 1px 1px 0px var(--redButton1);
+}
+
+/* Event Flavor Text */
+/* has to go at the bottom since it likes to be mean to me otherwise trust me best left here lol */
+center>div.center.b, center>b>span {
+    color: var(--eventText) !important;
+}
+
+/* Footer */
+.footer {
+    background: var(--bgColor);
+    border-radius: 10px;
+    border: 1px solid var(--borderColor);
+    box-shadow: none;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+/* technically applies to all "white" text on the site but mainly applies to the footer text */
+.white {
+    color: var(--fc1);
+}
+
+/* bottom links container size to prevent weird stacking issues */
+ul.bottomlinks {
+    width: max-content !important;
+}
+
+/* bottoms links */
+.bottomlinks li a, .bottomlinks li a:link, .bottomlinks li a:active, .bottomlinks li a:visited, .footer a, .footer a:link, .footer a:active, .footer a:visited {
+    color: var(--fc2);
+    border-bottom: none;
+}
+
+.bottomlinks li a:hover, .bottomlinks li a:focus, .footer a:hover, footer a:focus {
+    color: var(--fc1);
+}
+
+/*#region Chat */
+/* main container */
+#chatMessageContainer {
+    border: 1px solid var(--borderColor);
+}
+
+/* chat buttons */
+#btnChatSettings, #btnLoadNewMessages, .s-chat-message_menu {
+    filter: grayscale() brightness(0%);
+}
+
+/* menu dropbox */
+.channelMenu>button, .channelMenu>div {
+    background: var(--pc1) !important;
+    border-color: var(--borderColor) !important;
+    color: var(--fc2) !important;
+    box-shadow: none !important;
+}
+
+/* message text */
+.s-chat-message {
+    color: var(--fc1);
+}
+
+/* even messages */
+.s-chat-message:nth-child(even) {
+    background: var(--pc4);
+}
+
+/* odd messages */
+.s-chat-message:nth-child(odd) {
+    background: var(--pc3);
+}
+
+/* mention */
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention, .s-chat-message.hasContext {
+    background: var(--sc4) !important;
+    border-color: var(--sc1) !important;
+    color: var(--fc1) !important;
+    padding-left: 10px;
+}
+
+.s-chat-message.hasContext .s-chat-message_timestamp, .s-chat-message_mention.s-chat-message_timestamp {
+    padding-left: 10px;
+}
+
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention a {
+    color: var(--fc2) !important;
+}
+
+#chatMessageList[data-pings="enabled"] .s-chat-message_mention a:hover, #chatMessageList[data-pings="enabled"] .s-chat-message_mention a:focus {
+    color: var(--fc1) !important;
+}
+
+/* scrollbar */
+#chatMessageList::-webkit-scrollbar {
+    width: 8px;
+    background: #fff;
+}
+
+/* scrollbar button */
+#chatMessageList::-webkit-scrollbar-thumb {
+    background: var(--pc2);
+    border-radius: 0;
+}
+
+#chatMessageList::-webkit-scrollbar-thumb:hover {
+    background: var(--pc1);
+}
+
+/* claim badge */
+.s-chat-message_claim {
+    background: var(--pc2);
+    border-bottom: none;
+    color: var(--fc1);
+}
+
+/* claim popout box stuff */
+#modalClaimBG {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* main inner bit */
+#modalClaimList {
+    background: var(--pc4);
+    color: var(--fc1);
+    border: 1px solid var(--borderColor);
+}
+
+#modalClaimList a, #modalClaimList a:active, #modalClaimList a:visited, #modalClaimList a:link {
+    color: var(--fc2);
+}
+
+#modalClaimList a:hover, #modalClaimList a:focus {
+    color: var(--fc1);
+}
+
+/* header */
+#modalClaimList h3 {
+    background: var(--pc2);
+    color: var(--fc1);
+}
+
+/* close button */
+#modalClaimList button.close {
+    color: var(--fc1);
+}
+
+/* pinned message */
+#chatMessagePinned, #chatMessagePinned.s-chat-message__pinned {
+    background: var(--pc1);
+    color: var(--fc1) !important;
+    border: none !important;
+}
+
+.s-chat-sidebar #chatMessagePinned.s-chat-message__pinned {
+    text-indent: 4px;
+}
+
+/* timestamp */
+.s-chat-message_timestamp {
+    color: var(--fc1);
+}
+
+/* mod message text (best left at #000) */
+.s-chat-message__mod, .s-chat-message__mod .s-chat-message_content, .s-chat-message__mod .s-chat-message_timestamp {
+    color: #000;
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher {
+    color: var(--fc1);
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher:hover, #fra_chatContainer .channelMenu .channelSwitcher:focus {
+    background: var(--pc2);
+    color: var(--fc1);
+}
+
+#fra_chatContainer .channelMenu .channelSwitcher.active {
+    background: var(--pc3);
+    color: var(--fc1);
+}
+
+/* settings text (DO NOT CHANGE OR IT WILL BREAK) */
+#fra_chatContainer label {
+    color: #000;
+}
+
+/* char count */
+#lblCharacterCounter {
+    color: var(--fc1) !important;
+}
+
+/* code of conduct & chat room link */
+a[href$='./code.php'], a[href$='./chat.php'] {
+    color: var(--fc1);
+}
+
+/*#endregion */
+
+/* Media Query Adjustments */
+@media (max-width: 993px) {
+    .dynastylist {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        background-position-y: center;
+        background-position-x: center;
+        /* DON'T CHANGE BELOW */
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto !important;
+        min-width: 600px;
+    }
+
+    .main, .topbar {
+        box-shadow: none !important;
+    }
+
+    #fraProfileContent.hidden-xs {
+        display: block !important;
+    }
+
+    .breadcrumb::after {
+        right: 22% !important;
+    }
+}
+
+@media (max-width: 684px) {
+    div.lionImage.featured-lion>div {
+        height: 475px !important;
+    }
+}
+
+@media (max-width: 620px) {
+    div.lionImage.featured-lion>div {
+        height: 450px !important;
+    }
+}
