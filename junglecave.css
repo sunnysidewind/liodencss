@@ -54,7 +54,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 /* Body */
 body {
-    font-family: 'Nunito Sans', Verdana, 'Geneva', Tahoma, sans-serif
+    font-family: 'Nunito Sans', Verdana, 'Geneva', Tahoma, sans-serif;
     background: #43471f url('https://dl.dropbox.com/s/05pgepva4jhboj5/mossy-forest.jpg?dl=0') fixed;
     background-position-y: center;
     background-position-x: center;
