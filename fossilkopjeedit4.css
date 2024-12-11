@@ -49,7 +49,7 @@
 /* Body */
 body {
     font-family: var(--mainFont);
-    background: #e0dad1 url('https://upload.wikimedia.org/wikipedia/commons/b/b1/Kopje_%2831224859751%29.jpg') fixed;
+    background: #e0dad1 url('https://upload.wikimedia.org/wikipedia/commons/b/b1/Kopje_%2831224859751%29.jpg?alt=') fixed;
     background-position-y: center;
     background-position-x: center;
     /* DON'T CHANGE BELOW */
